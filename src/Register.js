@@ -95,7 +95,7 @@ export default function Register({ changeView }) {
         reset(defaultValues);
         setFeedback("L'inscription s'est bien passé. Vous allez être redirigé");
         setTimeout(() => {
-          changeView();
+          changeView("homepage");
         }, 3000);
       }
     } catch (error) {
@@ -104,7 +104,7 @@ export default function Register({ changeView }) {
   }
   return (
     <div
-      className={`mh100 d-flex flex-column justify-content-center align-items-center`}
+      className={`d-flex flex-column justify-content-center align-items-center flex-fill`}
     >
       <form onSubmit={handleSubmit(submit)}>
         <div className="d-flex flex-column mb20">

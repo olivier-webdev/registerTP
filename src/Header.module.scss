@@ -1,0 +1,11 @@
+@use "./assets/styles/mixin" as mixin;
+
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: var(--box-shadow-nav);
+  color: var(--primary);
+  img {
+    width: 70px;
+  }
+}
